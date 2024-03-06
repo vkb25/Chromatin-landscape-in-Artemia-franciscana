@@ -50,6 +50,7 @@ java -jar $PICARD MarkDuplicates I=file_trimmed_sorted_duMarked.sam O=file_trimm
 ##### Filtering the alignment 
 
 -F 0x04 remove PCR duplicates
+
 -f 0x2 proper paired retained 
 
 `samtools view -bS -@ 16 -q 2 -F 0x04 -f 0x2 file_trimmed_rDup_sorted.sam -o file_trimmed_rDup.bam`
