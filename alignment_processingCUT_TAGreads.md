@@ -46,17 +46,17 @@ java -jar $PICARD MarkDuplicates I=file_trimmed_sorted.sam O=file_trimmed_sorted
 java -jar $PICARD MarkDuplicates I=file_trimmed_sorted_duMarked.sam O=file_trimmed_rDup.sam REMOVE_DUPLICATES=true METRICS_FILE=file_picard.rmDup.txt
 `
 
-###### Sorting the alignment
+##### Sorting the alignment
 `
 samtools sort -@ 16 file_trimmed_rDup.sam -o file_trimmed_rDup_sorted.sam
 
-###### Filtering the alignment 
+##### Filtering the alignment 
 ####### -F 0x04 remove PCR duplicates
 #######  -f 0x2 proper paired retained
 `
 samtools view -bS -@ 16 -q 2 -F 0x04 -f 0x2 file_trimmed_rDup_sorted.sam -o file_trimmed_rDup.bam
 `
-###### Sorting and Indexing the alignments for downstream analysis
+##### Sorting and Indexing the alignments for downstream analysis
 ```
 samtools sort -@ 16 file_trimmed_rDup.bam -o file_rDupsorted.bam
 samtools index -@ 16 file_rDupsorted.bam
