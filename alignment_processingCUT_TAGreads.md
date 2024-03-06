@@ -55,9 +55,8 @@ samtools sort -@ 16 file_trimmed_rDup.sam -o file_trimmed_rDup_sorted.sam
 -F 0x04 remove PCR duplicates
 -f 0x2 proper paired retained 
 
-`
-samtools view -bS -@ 16 -q 2 -F 0x04 -f 0x2 file_trimmed_rDup_sorted.sam -o file_trimmed_rDup.bam
-`
+`samtools view -bS -@ 16 -q 2 -F 0x04 -f 0x2 file_trimmed_rDup_sorted.sam -o file_trimmed_rDup.bam`
+
 ##### Sorting and Indexing the alignments for downstream analysis
 ```
 samtools sort -@ 16 file_trimmed_rDup.bam -o file_rDupsorted.bam
