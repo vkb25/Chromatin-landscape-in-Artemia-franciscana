@@ -45,8 +45,7 @@ java -jar $PICARD MarkDuplicates I=file_trimmed_sorted_duMarked.sam O=file_trimm
 `
 
 ##### Sorting the alignment
-`
-samtools sort -@ 16 file_trimmed_rDup.sam -o file_trimmed_rDup_sorted.sam
+`samtools sort -@ 16 file_trimmed_rDup.sam -o file_trimmed_rDup_sorted.sam`
 
 ##### Filtering the alignment 
 
