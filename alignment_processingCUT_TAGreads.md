@@ -60,5 +60,4 @@ samtools view -bS -@ 16 -q 2 -F 0x04 -f 0x2 file_trimmed_rDup_sorted.sam -o file
 ```
 samtools sort -@ 16 file_trimmed_rDup.bam -o file_rDupsorted.bam
 samtools index -@ 16 file_rDupsorted.bam
-
-`
+```
