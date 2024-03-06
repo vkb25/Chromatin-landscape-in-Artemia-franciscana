@@ -32,9 +32,7 @@ bowtie2 -x Afran_genome -p 60 --local --very-sensitive-local --no-unal --no-mixe
 `
 
 ##### Sort the alignment
-`
-java -jar $PICARD SortSam -I file_trimmed.sam -O file_trimmed_sorted.sam -SORT_ORDER coordinate
-`
+`java -jar $PICARD SortSam -I file_trimmed.sam -O file_trimmed_sorted.sam -SORT_ORDER coordinate`
 
 ##### Mark duplicates
 `
