@@ -12,9 +12,23 @@ Quantification of Transcript abundances
 
 `kallisto quant -t 16 -i transcripts.idx -o file -b 100 file_1.fastq file_2.fastq`
 
+Let's prepare sample information referred to as hiseq_info.txt
 
+```
+run_accession   condition
+60541   mh
+60542   mh
+60545   fh
+60546   fh
+```
+# Let's run sleuth
+
+```
 library("sleuth")
 
+Let's read the samples and associate them sample information
+
+```
 base_dir <- "path/ExpressionKal"
 
 sample_id <- dir(file.path(base_dir, "KalSomatic"))
@@ -26,7 +40,19 @@ s2c <- read.table(file.path(base_dir, "hiseq_info.txt"), header = TRUE, stringsA
 s2c <- dplyr::select(s2c, sample = run_accession, condition)
 
 s2c <- dplyr::mutate(s2c, path = kal_dirs)
+```
 
+Steps below involve as described in [](https://pachterlab.github.io/sleuth_walkthroughs/trapnell/analysis.html)
+
+1) load the kallisto processed data into the object
+
+(2) estimate parameters for the sleuth response error measurement (full) model
+
+(3) estimate parameters for the sleuth reduced model, and
+
+(4) perform differential analysis (testing) using the likelihood ratio test
+
+```
 so <- sleuth_prep(s2c, extra_bootstrap_summary = TRUE)
 
 so <- sleuth_fit(so, ~condition, 'full')
@@ -36,6 +62,10 @@ so <- sleuth_fit(so, ~1, 'reduced')
 so <- sleuth_lrt(so, 'reduced', 'full')
 
 results_table <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
+
+```
+
+we can get the results of this analysis
 
 SummaryKallisto_table<- sleuth_to_matrix(so, "obs_norm", "tpm")
 
@@ -76,6 +106,8 @@ pdf("jg20557.pdf", width=14, height=7)
 plot_bootstrap(so_genes, "jg20557", units = "scaled_reads_per_base", color_by = "condition")
 
 dev.off()
+
+### We then Normalize the expression
 
 expf <- read.table("DEgenes_expression_mhfh.txt", head=T, sep=" ")
 
