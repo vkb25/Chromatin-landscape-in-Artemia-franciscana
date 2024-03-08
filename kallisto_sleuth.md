@@ -45,7 +45,7 @@ s2c <- dplyr::mutate(s2c, path = kal_dirs)
 
 Steps below involve as described in [](https://pachterlab.github.io/sleuth_walkthroughs/trapnell/analysis.html)
 
-1) load the kallisto processed data into the object
+(1) load the kallisto processed data into the object
 
 (2) estimate parameters for the sleuth response error measurement (full) model
 
@@ -68,6 +68,7 @@ results_table <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
 
 we can get the results of this analysis
 
+```
 SummaryKallisto_table<- sleuth_to_matrix(so, "obs_norm", "tpm")
 
 write.table(results_table, file = "DEtranscripts_mhfh.txt")
@@ -107,8 +108,11 @@ pdf("jg20557.pdf", width=14, height=7)
 plot_bootstrap(so_genes, "jg20557", units = "scaled_reads_per_base", color_by = "condition")
 
 dev.off()
+```
 
 ### We then Normalize the expression
+
+```
 
 expf <- read.table("DEgenes_expression_mhfh.txt", head=T, sep=" ")
 
@@ -137,6 +141,7 @@ expf_2<-expf[,c(2:3)]
 expf3 <- data.frame(expf2, expf_2)
 
 write.table(expf3, file = "Expression_afranciscana_headsnormalizedTPM.txt", quote=F)
+```
 
 
 
