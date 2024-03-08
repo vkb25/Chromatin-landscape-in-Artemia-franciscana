@@ -23,8 +23,9 @@ run_accession   condition
 ```
 # Let's run sleuth
 
-```
-library("sleuth")
+Load the necessary package 
+
+`library("sleuth")`
 
 Let's read the samples and associate them sample information
 
