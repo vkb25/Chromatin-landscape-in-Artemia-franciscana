@@ -7,3 +7,5 @@ Here's an overview delineating the contents of each file/folder:
 #### 2. [Differential Expression Analysis](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/8c617acdb6e7b649a9a1ebb00b780f8595015ab2/kallisto_sleuth.md)
 
 #### 3. [Chromatin state analysis](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/8e94c5fd48ed9eacd5cd22cbd70a4bfc07eca27c/Spectacle_running.md)
+
+#### 4. [Correlating genes with chromatin marks](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/7c6005de5a444e36e7bccea3b3059050604bc68e/Correlating_Genes_Chromatin_marks.md)
