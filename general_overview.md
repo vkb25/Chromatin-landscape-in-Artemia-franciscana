@@ -6,3 +6,4 @@ Here's an overview delineating the contents of each file/folder:
 
 #### 2. [Differential Expression Analysis](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/8c617acdb6e7b649a9a1ebb00b780f8595015ab2/kallisto_sleuth.md)
 
+### 3. [Identification of Ideal chromatin state number]
