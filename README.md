@@ -8,7 +8,7 @@ This repository comprises all the scripts and commands employed by the authors f
 
 ### 3. Chromatin state analysis [](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/1247e0d01b616c873a643eeba2bd686324f4e69b/Spectacle_running.md)
 
-### 4. Correlating genes with chromatin marks []()
+### 4. Correlating genes with chromatin marks [](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/de3b996c1b0153ae714dd569e88899b755ee059e/Correlating_Genes_Chromatin_marks.md)
 
 
 
