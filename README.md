@@ -6,7 +6,7 @@ This repository comprises all the scripts and commands employed by the authors f
 
 ### 2. Differential Expression Analysis [](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/37668bbec89ae1d119ab10fcc47459d322cfd483/kallisto_sleuth.md)
 
-
+### 3. Chromatin state analysis []()
 
 
 
