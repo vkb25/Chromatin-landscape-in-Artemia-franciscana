@@ -10,7 +10,7 @@ This repository comprises all the scripts and commands employed by the authors f
 
 ### 4. Correlating genes with chromatin marks [](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/de3b996c1b0153ae714dd569e88899b755ee059e/Correlating_Genes_Chromatin_marks.md)
 
-### 5. Estimating the Rates of Evolution 
+### 5. Estimating the Rates of Evolution [](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/d8845d07f551f01a13af768e99305db7c04cc7e1/afran_asin_kaks.md)
 
 
 
