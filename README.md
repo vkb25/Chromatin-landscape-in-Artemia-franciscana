@@ -14,5 +14,5 @@ This repository comprises all the scripts and commands employed by the authors f
 
 ### 6. Homer Motifs in Somatic Tissue [](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/9c7e4aad743977e38df1ba22eb0afde6326432cb/Somatic_homerResults.html)
 
-### 7. Homer Motifs in Gonadal Tissue []()
+### 7. Homer Motifs in Gonadal Tissue [](https://github.com/vkb25/Chromatin-landscape-in-Artemia-franciscana/blob/5bb798bceea12c83721f223326eea4b3a5be5fc3/Gonads_homerResults.html)
 
